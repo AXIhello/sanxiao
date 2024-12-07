@@ -92,10 +92,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="lzttest.cpp" />
-    <ClCompile Include="map.cpp" />
-    <ClCompile Include="test.cpp" />
-    <ClCompile Include="tttt.cpp" />
     <QtRcc Include="sanxiao.qrc" />
     <QtUic Include="sanxiao.ui" />
     <QtMoc Include="sanxiao.h" />
@@ -105,9 +101,6 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Game.h" />
-    <ClInclude Include="lzttest.h" />
-    <ClInclude Include="test.h" />
-    <ClInclude Include="tttt.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">
