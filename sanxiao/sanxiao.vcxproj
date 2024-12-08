@@ -96,11 +96,13 @@
     <QtUic Include="sanxiao.ui" />
     <QtMoc Include="sanxiao.h" />
     <ClCompile Include="Game.cpp" />
+    <ClCompile Include="number.cpp" />
     <ClCompile Include="sanxiao.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Game.h" />
+    <ClInclude Include="number.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">
