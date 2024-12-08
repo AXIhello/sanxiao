@@ -5,6 +5,8 @@
 #include <QPushButton>
 #include <QVBoxLayout>
 
+class LoginWidget;  // 前置声明登录界面类
+
 class MainMenuWidget : public QWidget {
     Q_OBJECT
 
@@ -12,12 +14,13 @@ public:
     MainMenuWidget(QWidget* parent = nullptr);
 
 signals:
-    void startGame(); // 自定义信号，用于通知游戏开始
+    void startGame();
 
 private:
     QPushButton* btnStart;
     QPushButton* btnHelp;
     QPushButton* btnAbout;
+    LoginWidget* loginWidget;  // 用于存储登录界面指针
 };
 
 #endif // MAINMENUWIDGET_H

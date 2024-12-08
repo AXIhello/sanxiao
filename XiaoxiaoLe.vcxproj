@@ -98,6 +98,7 @@
     <ClCompile Include="MainMenuWidget.cpp" />
     <ClCompile Include="MainWindow.cpp" />
     <ClCompile Include="Map.cpp" />
+    <ClCompile Include="LoginWidget.cpp" />
     <QtRcc Include="GameWidget.qrc" />
     <QtUic Include="GamePanelWidget.ui" />
     <QtMoc Include="GameWidget.h" />
@@ -110,6 +111,7 @@
   <ItemGroup>
     <ClInclude Include="Define.h" />
     <ClInclude Include="GamePanelWidget.h" />
+    <QtMoc Include="LoginWidget.h" />
     <QtMoc Include="MainWindow.h" />
     <QtMoc Include="MainMenuWidget.h" />
     <QtMoc Include="Map.h" />
