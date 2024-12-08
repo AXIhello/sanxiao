@@ -1,25 +1,28 @@
-#pragma once
 #ifndef LOGINWIDGET_H
 #define LOGINWIDGET_H
 
-#include <QWidget>
+#include <QDialog>
 #include <QLineEdit>
 #include <QPushButton>
-#include <QVBoxLayout>
 
-class LoginWidget : public QWidget {
+class LoginWidget : public QDialog {
     Q_OBJECT
 
 public:
-    LoginWidget(QWidget* parent = nullptr);
+    explicit LoginWidget(QWidget* parent = nullptr);
 
 signals:
-    void loginSuccess();  // 登录成功信号
+    void loginSuccess(); // 登录成功的信号
+
+private slots:
+    void onLoginClicked();
+    void onRegisterClicked();
 
 private:
     QLineEdit* usernameEdit;
     QLineEdit* passwordEdit;
     QPushButton* btnLogin;
+    QPushButton* btnregister;
 };
 
 #endif // LOGINWIDGET_H

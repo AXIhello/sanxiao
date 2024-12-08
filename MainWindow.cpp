@@ -6,10 +6,10 @@ MainWindow::MainWindow(QWidget* parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this); // 设置 UI
-    mainMenuWidget = new MainMenuWidget(this); // 创建主菜单
+    mainMenuWidget = new MainMenuWidget(this,ui); // 创建主菜单
     gamePanelWidget = new GamePanelWidget(this); // 创建游戏面板
 
-    // 初始先隐藏游戏面板，这样一开始就只显示菜单页面
+    // 初始先隐藏游戏面板
     gamePanelWidget->hide();
 
     setCentralWidget(mainMenuWidget); // 初始显示主菜单

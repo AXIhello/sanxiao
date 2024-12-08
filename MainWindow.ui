@@ -13,7 +13,7 @@
   <property name="windowTitle">
    <string>Form</string>
   </property>
-  <widget class="QPushButton" name="pushButton">
+  <widget class="QPushButton" name="btnStart">
    <property name="geometry">
     <rect>
      <x>300</x>
@@ -33,7 +33,7 @@ border-radius: 8px;
     <string>开始游戏</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_2">
+  <widget class="QPushButton" name="btnHelp">
    <property name="geometry">
     <rect>
      <x>300</x>
@@ -53,7 +53,7 @@ border-radius: 8px;
     <string>帮助</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_3">
+  <widget class="QPushButton" name="btnAbout">
    <property name="geometry">
     <rect>
      <x>290</x>
