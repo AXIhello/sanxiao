@@ -49,9 +49,6 @@
     <ClCompile Include="GamePanelWidget.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="MainMenuWidget.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="MainWindow.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -69,9 +66,6 @@
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="Map.h">
-      <Filter>Header Files</Filter>
-    </QtMoc>
-    <QtMoc Include="MainMenuWidget.h">
       <Filter>Header Files</Filter>
     </QtMoc>
     <QtMoc Include="MainWindow.h">

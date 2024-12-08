@@ -2,8 +2,11 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <QPushButton>
+#include <QVBoxLayout>
+#include <QMessageBox>
 #include "GamePanelWidget.h"
-#include "MainMenuWidget.h"
+#include "LoginWidget.h"
 #include "ui_MainWindow.h"
 
 class MainWindow : public QMainWindow {
@@ -12,12 +15,17 @@ class MainWindow : public QMainWindow {
 public:
     MainWindow(QWidget* parent = nullptr);
     ~MainWindow();
-    Ui::MainWindow* getUi() const { return ui; }
+
+private slots:
+    void onStartButtonClicked();
+    void onHelpButtonClicked();
+    void onAboutButtonClicked();
+    void onLoginSuccess();
 
 private:
-    Ui::MainWindow* ui; // ÉùÃ÷ ui ±äÁ¿
-    MainMenuWidget* mainMenuWidget;
+    Ui::MainWindow* ui;
     GamePanelWidget* gamePanelWidget;
+    LoginWidget* loginWidget;
 };
 
 #endif // MAINWINDOW_H

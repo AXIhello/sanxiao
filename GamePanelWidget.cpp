@@ -3,7 +3,7 @@
 #include <qdebug.h>
 #include <QMessageBox>
 #include <QListWidget>
-#include "MainMenuWidget.h"
+//#include "MainMenuWidget.h"
 GamePanelWidget::GamePanelWidget(QWidget* parent)
 	: QWidget(parent)
 	, ui(new Ui::GamePanelWidgetClass())
